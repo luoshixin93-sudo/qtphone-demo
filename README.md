@@ -1,4 +1,4 @@
-# 📱 QTPhone Demo — Global Independent IP Cloud Phone
+# 🇭🇰 QTPhone Demo — Global Independent IP Cloud Phone
 
 Welcome to the official **QTPhone** demo repository.
 
@@ -9,31 +9,56 @@ social-media marketing, automation, gaming multi-instance, and large-scale app t
 
 ---
 
-## ✨ What this repo shows
+## 🔧 What this repo shows
 
-This repo demonstrates QTPhone's core promise: **every cloud phone gets its own
-independent public IP**. Run the included `ip_check.py` from inside a QTPhone instance
-to verify the IP your cloud device presents to the world.
+This repo demonstrates two QTPhone core capabilities:
 
-## 🚀 Quick start
+1. **ip_check.py** — Verify your cloud device's public IP address (each QTPhone instance gets its own independent IP)
+2. **device_status_checker.py** — Check real-time device status: screen, battery, network, installed apps, and IP (useful for managing a cloud device fleet)
 
-```bash
-# From inside your QTPhone cloud device (or any machine)
+## 🔌 Quick start
+
+`ash
+# Run IP checker (from any QTPhone cloud device)
 python ip_check.py
-```
 
-Sample output:
+# Run device status checker
+python device_status_checker.py
+`
 
-```
+### Sample output — ip_check.py
+
+`
 QTPhone Independent-IP Checker
 ------------------------------
 Public IP : 203.0.113.42
 Org / ISP : Example-Datacenter LLC
 Country   : HK
 Verdict   : ✅ Independent public IP detected
-```
+`
 
-## 🧰 Use cases
+### Sample output — device_status_checker.py
+
+`
+QTPhone Device Status Checker
+============================== Firmware  : Android 14
+CPU Arch  : arm64-v8a
+------------------------------
+Screen    : ON (1080x2400 @ 60Hz)
+Battery   : 85% | Charging: Yes
+Network   : WiFi | SSID: QTPhone-Cloud
+IP        : 203.0.113.42 (HK)
+------------------------------
+Installed apps (top 5):
+  com.whatsapp      - WhatsApp
+  org.telegram.messenger - Telegram
+  com.twitter.android    - Twitter/X
+  com.instagram.android  - Instagram
+  com.snapchat.android   - Snapchat
+Verdict  : ✅ All systems operational
+`
+
+## 💡 Use cases
 
 | Use case | Why QTPhone |
 |----------|-------------|
@@ -41,6 +66,15 @@ Verdict   : ✅ Independent public IP detected
 | Automation & bots | Scale scripts across isolated cloud Android instances |
 | Multi-instance gaming | Parallel sessions without hardware or bans |
 | App testing | Test across real devices and real geolocations |
+| Fleet management | Monitor status of all cloud devices from one dashboard |
+
+## 📂 File overview
+
+| File | Description |
+|------|-------------|
+| ip_check.py | Public IP verification tool |
+| device_status_checker.py | Cloud device health & status checker |
+| README.md | This file |
 
 ## 📞 Contact
 
